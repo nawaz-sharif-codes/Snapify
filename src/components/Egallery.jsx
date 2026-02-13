@@ -16,7 +16,8 @@ const Egallery = () => {
         {gallery.map((item, index) => {
           return (
             <div key={index} className={styles.card}>
-              <img src={item.download_url} alt="picture" />
+              <img loading='lazy' src={item.download_url} alt="picture" />
+              <span className={styles.authorSpan}>{item.author}</span>
             </div>
           );
         })}
