@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "../components/Egallery.module.css";
 import { useEGallery } from "../hooks/useEgallery.js";
+import Loading from "./Loading.jsx";
 
 const Egallery = () => {
   const { gallery, loading, error } = useEGallery();
-
-  if (loading) return <span>Loading...</span>;
+  if (loading) return <Loading/>;
 
   if (error) return <span>Error occured</span>;
 

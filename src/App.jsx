@@ -3,7 +3,7 @@ import Egallery from './components/Egallery'
 
 const App = () => {
   return (
-    <div>
+    <div className='EgalleryContainer'>
       <Egallery/>
     </div>
   )
